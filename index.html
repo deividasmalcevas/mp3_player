@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--    boot strap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--    my style-->
+    <link rel="stylesheet" href="mp3.css">
+    <!--time-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!--my script-->
+    <script src="mp3.js" defer></script>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <div class="player">
+            <select id="audio-select" class="form-select">
+                <option value="">Select a song</option>
+            </select>
+            <audio id="audio"></audio>
+            <canvas id="visualizer"></canvas>
+            <div class="controls">
+                <div class="playing">
+                    <button id="play-pause" class="btn btn-light">Play</button>
+                    <div id="progress-container" class="progress-container">
+                        <div id="progress" class="progress"></div>
+                    </div>
+                    <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                </div>
+                <div class="playing">
+                    <button id="download" class="btn btn-light">Download</button>
+                    <div>
+                        <label class="text-light m-2" for="volume">Vol</label><input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

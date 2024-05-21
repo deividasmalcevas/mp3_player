@@ -1,0 +1,48 @@
+.player {
+    background: url("https://wallpapers-clan.com/wp-content/uploads/2023/11/cool-vaporwave-art-desktop-wallpaper-preview.jpg") center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+.playing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+#progress-container {
+    background: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    height: 5px;
+    margin: 0 15px;
+    position: relative;
+}
+
+.progress {
+    background: #fa5b97;
+    border-radius: 5px;
+    height: 100%;
+    width: 0;
+}
+#current-time, #duration {
+    color: white;
+    font-size: 14px;
+}
+#volume {
+    width: 200px;
+    margin: 10px 0;
+}
+#visualizer {
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    margin: 10px 0;
+    width: 30%;
+    height: 10%;
+}
