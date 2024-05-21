@@ -17,10 +17,11 @@ const source = audioContext.createMediaElementSource(audio);
 //all the audio files
 const audioFiles = [
     { name: 'Marvel83 - Golden Dawn', path: 'Marvel83  Golden Dawn.mp3' },
-    { name: 'Da Tooby – Midnight Breaks 1 – 1990s Hip Hop , Beats', path: 'Da Tooby – Midnight Breaks 1 – 1990s Hip Hop , Beats.mp3' },
-    { name: 'De Lorra - Endless', path: 'De Lorra - Endless.mp3' },
+    { name: 'STARFORCE - Spacebridge', path: 'STARFORCE - Spacebridge.mp3' },
     { name: 'De Lorra - Let Us', path: 'De Lorra - Let Us.mp3' },
-    { name: 'De Lorra - The Night Was Ours', path: 'De Lorra - The Night Was Ours.mp3' }
+    { name: 'architecture in tokyo - FOREVER', path: 'architecture in tokyo - FOREVER.mp3' },
+    { name: 'Yumi Rose - Saturday (w Ceruleancerise)', path: 'Yumi Rose - Saturday (w Ceruleancerise).mp3' },
+    { name: `Yung Bae - You've Got Me`, path: `Yung Bae - You've Got Me.mp3` }
 ];
 //initialize
 populateAudioSelect();
