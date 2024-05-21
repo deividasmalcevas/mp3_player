@@ -119,8 +119,7 @@ function draw() {
 
     for (let i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i] / 2;
-
-        canvas.fillStyle = `rgb(${barHeight + 100},50,50)`;
+        canvas.fillStyle = `rgb(${barHeight + 120},88,148)`;
         canvas.fillRect(x, visualizer.height - barHeight / 2, barWidth, barHeight);
 
         x += barWidth + 1;
